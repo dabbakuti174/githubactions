@@ -1,0 +1,15 @@
+---
+name: inputparameters
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: this is inputparameters code
+        required: true
+        default: test
+jobs:
+  inputparameter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run input parameter
+        run: echo "Deploy the application ${{inputs.environment}}"
