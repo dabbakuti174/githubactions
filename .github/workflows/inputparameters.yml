@@ -7,6 +7,10 @@ on:
         description: this is inputparameters code
         required: true
         default: test
+      owner:
+        description: this owner is sri
+        required: true
+        default: 93926
 jobs:
   inputparameter:
     runs-on: ubuntu-latest
